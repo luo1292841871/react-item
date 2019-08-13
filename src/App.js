@@ -5,20 +5,18 @@ import Admin from './pages/admin';
 import Login from './pages/login';
 
 
-class App extends Component{
+export default class App extends Component{
   render() {
     return <Router>
       {/*
         Switch 切换，只显示匹配上的第一个路由组件，后面的就不看了
-      */
+      */}
       <Switch>
         {/*只要以"/"开头的，都会匹配和加载 */}
-        <Route path="/" component={Admin}/>
         <Route path="/login" component={Login}/>
+        <Route path="/" component={Admin}/>
       </Switch>
-
-    </Router>
+    </Router>;
   }
 }
 
-export default App;
