@@ -3,7 +3,7 @@ import { Form, Input, Icon, Button } from 'antd';
 
 import logo from './logo.png';
 
-import './index.css';
+import './index.less';
 
 const Item = Form.Item;
 
@@ -24,7 +24,7 @@ export default class Login extends Component {
                 <Input prefix={<Icon type="lock" />} placeholder="密码" />
               </Item>
               <Item>
-                <Button type="primary" htmlType="submit">登录</Button>
+                <Button type="primary" htmlType="submit" className="login-btn">登录</Button>
               </Item>
             </Form>
         </section>
